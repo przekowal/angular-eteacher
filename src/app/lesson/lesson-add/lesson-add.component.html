@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-12">
+    <form (ngSubmit)="onAddWordWordPair" #f="ngForm">
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="source">Source</label>
+          <input
+            type="text"
+            id="source"
+            class="form-control"
+            name="target"
+            ngModel>
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="target">Target</label>
+          <input
+            type="text"
+            id="target"
+            class="form-control"
+            name="target"
+            ngModel>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button class="btn btn-success" type="submit">Add</button>
+          <button class="btn btn-danger" type="button">Delete</button>
+          <button class="btn btn-primary" type="button">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

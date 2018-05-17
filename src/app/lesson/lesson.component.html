@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-10">
+    <!--<app-lesson-add></app-lesson-add>-->
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let wordPair of words"
+      >{{wordPair.source}} ({{wordPair.target}})</a>
+    </ul>
+  </div>
+
+</div>
